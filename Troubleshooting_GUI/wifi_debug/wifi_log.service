@@ -1,0 +1,12 @@
+[Unit]
+Description=Wifi Debug
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+ExecStart=/usr/bin/env bash /home/pi/si_update/sipios/Troubleshooting_GUI/wifi_debug/wifi_debug_starter.sh
+RestartSec=120
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target

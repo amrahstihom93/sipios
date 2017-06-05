@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=lxterminal  --title "Update in Progress - Do not close this window!" --command "gksu bash /home/pi/si_update/sipios/update_master.sh"
+Icon=/home/pi/si_update/sipios/desktop/SIPI_Icon_64x64_Update.png
+Terminal=false
+Name=SI Software Update
+Comment= Programming system and content development tool
+Categories=Accessories;

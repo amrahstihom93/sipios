@@ -1,0 +1,30 @@
+# This file was create by the Dexter Industries cinch setup script
+# Do not change unless you really know what you are doing
+
+auto lo
+iface lo inet loopback
+
+# auto eth0 waits for Ethernet device for more than 2 minutes.
+# Ref: http://raspberrypi.stackexchange.com/questions/45399/slow-boot-ethernet-wait
+# auto eth0
+
+# Ref for allow-hotplug:http://unix.stackexchange.com/questions/192671/what-is-a-hotplug-event-from-the-interface,
+# https://lists.debian.org/debian-doc/2008/02/msg00010.html,
+# https://www.debian.org/doc/manuals/debian-reference/ch05.en.html
+allow-hotplug eth0
+
+# iface eth0 inet dhcp
+iface eth0 inet dhcp
+
+# Ref: http://blog.embeddedcoding.com/2015/06/how-to-avoid-dhcp-delay-if-ethernet-is.html
+# You can reduce boot delay by 10 secs by uncommenting the below line and commenting dhcp which allots Dynamic IP address to eth0.
+#iface eth0 inet manual
+
+auto wlan0
+allow-hotplug wlan0
+
+iface wlan0 inet static
+address 10.10.10.10
+netmask 255.255.255.0
+
+up iptables-restore < /etc/iptables.ipv4.cinch.nat
