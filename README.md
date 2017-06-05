@@ -1,4 +1,4 @@
-# Sigmaway Pi For Robotics
+# SiPi OS For Robotics
 
 ![Dex Logo](sigmaway_logo.jpg "Sigmaway sLogo.")
 
