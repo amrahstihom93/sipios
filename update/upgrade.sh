@@ -19,3 +19,20 @@ sudo apt-get install scratch -y
 sudo apt-get install avahi-autoipd bc python-imaging python-pexpect python-renderpm -y
 sudo apt-get install python-reportlab python-reportlab-accel  -y
 sudo apt-get install git -y
+sudo wget https://raw.githubusercontent.com/SigmawayLLC/sipios/master/update_backup.sh /home/pi
+sudo chmod +x update_backup.sh
+sudo ./update_backup.sh
+rm ./update_backup.sh -y
+
+rm ./sipios_flavor.sh
+wget https://raw.githubusercontent.com/SigmawayLLC/sipios/master/jessie_update/sipios_flavor.sh
+chmod +x ./sipios_flavor.sh
+./sipios_flavor.sh
+rm ./sipios_flavor.sh
+
+cd /home/pi/Desktop
+
+sudo sh /home/pi/si_update/sipios/update_master.sh
+
+sudo apt-get clean
+sudo apt-get autoremove -y 
