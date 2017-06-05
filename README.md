@@ -1,6 +1,6 @@
 # SiPi OS For Robotics
 
-![Dex Logo](sigmaway_logo.jpg "Sigmaway sLogo.")
+![Sig Logo](sigmaway_logo.jpg "Sigmaway sLogo.")
 
 This is a customized version of the Raspbian Image for the Raspberry Pi.  It has been updated to help users get started quickly with Sigmaway's Robotics.
 
@@ -12,13 +12,13 @@ The following ports are used or have the potential for being used:
 
 22: SSH/SFTP
 
-80: http://dex.local
+80: http://si.local
 
 5901: noVNC service
 
-8001: noVNC at http://dex.local:8001
+8001: noVNC at http://si.local:8001
 
-4200: shellInABox at http://dex.local:4200
+4200: shellInABox at http://si.local:4200
 
 
 ## Changes 2016-01-05
