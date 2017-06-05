@@ -3,3 +3,6 @@ wget https://raw.githubusercontent.com/SigmawayLLC/sipios/master/update/upgrade.
 chmod +x ./cleanup.sh
 ./cleanup.sh
 rm ./cleanup.sh
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
