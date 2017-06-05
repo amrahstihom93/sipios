@@ -1,6 +1,6 @@
 # SiPi OS For Robotics
 
-![Sig Logo](sigmaway_logo.jpg "Sigmaway sLogo.")
+![Sig Logo](sigmaway_logo.jpg "Sigmaway Logo.")
 
 This is a customized version of the Raspbian Image for the Raspberry Pi.  It has been updated to help users get started quickly with Sigmaway's Robotics.
 
