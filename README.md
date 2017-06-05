@@ -1,6 +1,6 @@
 # Raspbian Pi For Robots
 
-![Dex Logo](dexter_industries_logo.jpg "Dexter Industries Logo.")
+![Dex Logo](sigmaway_logo.jpg "Dexter Industries Logo.")
 
 This is a customized version of the Raspbian Image for the Raspberry Pi.  It has been updated to help users get started quickly with Dexter Industries Robots.
 
