@@ -25,7 +25,7 @@ sudo ./update_backup.sh
 rm ./update_backup.sh -y
 
 rm ./sipios_flavor.sh
-wget https://raw.githubusercontent.com/SigmawayLLC/sipios/master/jessie_update/sipios_flavor.sh
+wget https://raw.githubusercontent.com/SigmawayLLC/sipios/master/update/sipios_flavor.sh
 chmod +x ./sipios_flavor.sh
 ./sipios_flavor.sh
 rm ./sipios_flavor.sh
